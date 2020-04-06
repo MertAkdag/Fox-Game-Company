@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+	<title>Nigh Coming Soon Responsive Widget Template :: W3layouts</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords"
+		content="Nigh Coming Soon Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+
+	<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+	<!--//Style-CSS -->
+	<!-- font-awesome-icons -->
+	<link href="../css/font-awesome.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/047db95ecf.js" crossorigin="anonymous"></script>
+	<!-- //font-awesome-icons -->
+</head>
+
+<body>
+	<section class="w3l-coming-soon-page">
+		<div class="coming-page-info-6">
+			<div class="wrapper">
+				<div class="coming-block">
+					<h1>Çok <br>Yakında</h1>
+					<p>ÇOK HARİKA BİR ŞEY OLUCAK</p>	
+					<div class="countdown">
+						<div class="countdown__days">
+							<div class="number"></div>
+							<span class>Gün</span>
+						</div>
+
+						<div class="countdown__hours">
+							<div class="number"></div>
+							<span class>Saat</span>
+						</div>
+
+						<div class="countdown__minutes">
+							<div class="number"></div>
+							<span class>Dakika</span>
+						</div>
+
+						<div class="countdown__seconds">
+							<div class="number"></div>
+							<span class>Saniye</span>
+						</div>
+					</div>
+				</div>
+				<div class="copyright-footer">
+					<div class="w3l-copy-right-left">
+						<ul class="social">
+						<a href="../usa/index.html">	<li><img src="https://img.icons8.com/color/48/000000/usa.png"/></li></a>
+							<li><a href="#"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
+							<li><a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
+							<li><a href="#"><span class="fab fa-instagram" aria-hidden="true"></span></a></li>
+	</ul>
+					</div>
+					<div class="w3l-copy-right">
+						<p>© 2020 FoxGamesCompany. All rights reserved | Design by
+							<a href="https://MertAkdag.com/" target="_blank">MertAkdag</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script>
+			(() => {
+				// Specify the deadline date
+				const deadlineDate = new Date('june 12, 2020 23:59:59').getTime();
+
+				// Cache all countdown boxes into consts
+				const countdownDays = document.querySelector('.countdown__days .number');
+				const countdownHours = document.querySelector('.countdown__hours .number');
+				const countdownMinutes = document.querySelector('.countdown__minutes .number');
+				const countdownSeconds = document.querySelector('.countdown__seconds .number');
+
+				// Update the count down every 1 second (1000 milliseconds)
+				setInterval(() => {
+					// Get current date and time
+					const currentDate = new Date().getTime();
+
+					// Calculate the distance between current date and time and the deadline date and time
+					const distance = deadlineDate - currentDate;
+
+					// Calculations the data for remaining days, hours, minutes and seconds
+					const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					// Insert the result data into individual countdown boxes
+					countdownDays.innerHTML = days;
+					countdownHours.innerHTML = hours;
+					countdownMinutes.innerHTML = minutes;
+					countdownSeconds.innerHTML = seconds;
+				}, 1000);
+			})();
+		</script>
+
+
+
+	</section>
+	<!-- //coming-61-w3l-vv-section -->
+
+
+</body>
+
+</html>
